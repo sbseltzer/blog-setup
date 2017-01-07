@@ -8,6 +8,11 @@ Todo: Add server config + ssh instructions
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install ruby ruby-dev make gcc git
-sudo gem update
-sudo gem install jekyll
+export GEM_HOME="$HOME/.gems"
+gem update
+gem install jekyll
+gem install bundle 
+jekyll new my-blog-name
+cd my-blog-name
+~/.gems/bin/bundle install
 ```
